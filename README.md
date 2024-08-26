@@ -1,4 +1,4 @@
-A collection of useful bash code. Import them into your function as such:
+A collection of useful bash code. Import them into your script file as such:
 
 ```shell
 #!/bin/bash
