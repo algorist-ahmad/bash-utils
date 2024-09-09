@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Returns 1 if answer is positive, 'Y' or 'y'
+get_confirmation() {
+    read -p "$1" -n 1 -r
+    >&2 echo   # new line
+    if [[ $REPLY =~ ^[Yy]$ ]]
+    then
+        echo 1
+        exit 0
+    fi
+    echo 0
+}
+
+prompt() {
+	#multichoice prompt
+}
